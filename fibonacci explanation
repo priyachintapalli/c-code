@@ -1,0 +1,37 @@
+The Fibonacci series starts with 0 and 1.
+Each next number is the sum of the previous two numbers.
+We use a loop to generate the series step by step.
+steps
+Start the program
+Declare variables for terms and initial values
+Take input from the user
+Use a loop to generate the series
+Calculate next term using sum of previous two
+Print each term
+End the program
+Code
+#include <stdio.h>
+int main() {
+    int n, i;
+    int a = 0, b = 1, next;
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+    for(i = 1; i <= n; i++) {
+        printf("%d ", a);
+        next = a + b;
+        a = b;
+        b = next;
+    }
+
+    return 0;
+}
+Output
+Enter number of terms: 5
+Fibonacci Series: 0 1 1 2 3
+Concepts Used
+Loops (for)
+Variables and data types
+Input/Output (scanf, printf)
